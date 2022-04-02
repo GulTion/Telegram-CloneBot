@@ -103,7 +103,8 @@ class GoogleDriveHelper:
             'role': 'reader',
             'type': 'user',
             'value': None,
-            'withLink': True
+            'withLink': True,
+          'emailAddress':None
         }
         return self.__service.permissions().create(supportsTeamDrives=True, fileId=drive_id,
                                                    body=permissions).execute()
