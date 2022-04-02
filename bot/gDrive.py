@@ -103,8 +103,7 @@ class GoogleDriveHelper:
             'role': 'reader',
             'type': 'user',
             'value': None,
-            'withLink': True,
-          'emailAddress':'gulshan.cse19@satyug.edu.in'
+            'withLink': True
         }
         return self.__service.permissions().create(supportsTeamDrives=True, fileId=drive_id,
                                                    body=permissions).execute()
