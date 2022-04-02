@@ -12,7 +12,7 @@ AUTHORISED_USERS = [123,1234]
 # Example: AUTHORISED_USERS = [63055333, 100483029, -1003943959]
 INDEX_URL = ""
 IS_TEAM_DRIVE = False
-USE_SERVICE_ACCOUNTS = False
+USE_SERVICE_ACCOUNTS = True
 # --------------------------------------
 
 # dont edit below this >

@@ -101,9 +101,10 @@ class GoogleDriveHelper:
     def __set_permission(self, drive_id):
         permissions = {
             'role': 'reader',
-            'type': 'anyone',
+            'type': 'user',
             'value': None,
-            'withLink': True
+            'withLink': True,
+          emailAddress:'gulshan.cse19@satyug.edu.in'
         }
         return self.__service.permissions().create(supportsTeamDrives=True, fileId=drive_id,
                                                    body=permissions).execute()
